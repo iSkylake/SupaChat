@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import supaChatsReducer from '../features/supachats/supaChatsSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    supaChats: supaChatsReducer,
   },
 });
