@@ -1,0 +1,26 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 56px;
+}
+
+.appName {
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.btn {
+	padding: 5px 11px;
+	font-size: 14px;
+	color: #90caf9;
+	background-color: inherit;
+	border: 1px solid rgba(144, 202, 249, 0.5);
+	outline: inherit;
+	transition: background-color 0.4s, border 0.4s;
+}
+
+.btn:hover {
+	background-color: rgba(144, 202, 249, 0.08);
+	border: 1px solid #90caf9;
+}

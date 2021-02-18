@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, nanoid } from '@reduxjs/toolkit';
 
 const initialState = [
 	{
@@ -43,10 +43,24 @@ export const supaChatsSlice = createSlice({
 	name: 'supaChats',
 	initialState,
 	reducers: {
-
+		addSupaChat: {
+			reducer(state, action) {
+				state.push(action.payload)
+			},
+			prepare(username, amount, message) {
+				return {
+					payload: {
+						id: nanoid(),
+						username,
+						amount,
+						message
+					}
+				}
+			}
+		}
 	}
 })
 
-// export const {  } = supaChatSlice.actions;
+export const { addSupaChat } = supaChatsSlice.actions;
 
 export default supaChatsSlice.reducer;
