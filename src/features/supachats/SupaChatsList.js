@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import styles from './SupaChatsList.module.css';
 
 import Modal from '../../components/Modal';
@@ -38,6 +39,9 @@ function SupaChatList(props) {
           {supaChat.username}
         </h3>
         <p className={styles.amount}>{`$${supaChat.amount.toFixed(2)}`}</p>
+        <Link to={`/supachats/${supaChat.id}`}>
+          <button className={`${styles.btn} ${styles['btn-view']}`}>View</button>
+        </Link>
       </header>
       <p
         className={`${styles.message} ${styles[`message-${getBgColor(supaChat.amount)}`]}`}
@@ -57,7 +61,9 @@ function SupaChatList(props) {
 
   return (
     <div>
-      <button onClick={handleOpen} className={styles.btn}>Add SupaChat</button>
+      <div className={styles['btn-group']}>
+        <button onClick={handleOpen} className={styles.btn}>Add SupaChat</button>
+      </div>
       <div className={styles.list}>
         { renderSupaChats }
         { renderSuperChatFormModal }
