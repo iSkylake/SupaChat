@@ -16,7 +16,7 @@ function AddSupaChatForm(props) {
 		onClose();
 	}
 
-	const canSubmit = username.length && amount.length && message.length;
+	const canSubmit = Boolean(username) && Boolean(amount) && Boolean(message);
 
 	return (
 		<div className={styles.formCtn}>
