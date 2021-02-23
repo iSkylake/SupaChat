@@ -15,90 +15,90 @@
 }
 
 .list {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-gap: 10px;
-	box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  box-sizing: border-box;
 }
 
 .header {
-	padding: 8px 16px;
+  padding: 8px 16px;
 }
 
 .username {
-	font-size: 14px;
-	font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .amount {
-	font-size: 15px;
-	font-weight: 700;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .message {
-	padding: 8px 16px;
+  padding: 8px 16px;
 }
 
 .dark {
-	color: #fff;
+  color: #fff;
 }
 
 .light {
-	color: #000;
+  color: #000;
 }
 
 .username-dark {
-	color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.7);
 }
 
 .username-light {
-	color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.54);
 }
 
 .header-blue {
-	background-color: rgba(0,184,212,1);
+  background-color: rgba(0,184,212,1);
 }
 
 .message-blue {
-	background-color: rgba(0,229,255,1);
+  background-color: rgba(0,229,255,1);
 }
 
 .header-cyan {
-	background-color: rgba(0, 191, 165, 1);
+  background-color: rgba(0, 191, 165, 1);
 }
 
 .message-cyan {
-	background-color: rgba(29,233,182,1);
+  background-color: rgba(29,233,182,1);
 }
 
 .header-yellow {
-	background-color: rgba(255,179,0,1);
+  background-color: rgba(255,179,0,1);
 }
 
 .message-yellow {
-	background-color: rgba(255,202,40,1);
+  background-color: rgba(255,202,40,1);
 }
 
 .header-orange {
-	background-color: rgba(230,81,0,1);
+  background-color: rgba(230,81,0,1);
 }
 
 .message-orange {
-	background-color: rgba(245,124,0,1);
+  background-color: rgba(245,124,0,1);
 }
 
 .header-pink {
-	background-color: rgba(194,24,91,1);
+  background-color: rgba(194,24,91,1);
 }
 
 .message-pink {
-	background-color: rgba(233,30,99,1);
+  background-color: rgba(233,30,99,1);
 }
 
 .header-red {
-	background-color: rgba(208,0,0,1);
+  background-color: rgba(208,0,0,1);
 }
 
 .message-red {
-	background-color: rgba(230,33,23,1);
+  background-color: rgba(230,33,23,1);
 }
