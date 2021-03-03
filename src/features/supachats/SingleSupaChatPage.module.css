@@ -1,0 +1,116 @@
+.container {
+  color: #fff;
+  max-width: 450px;
+}
+
+.header {
+  position: relative;
+  padding: 8px 16px;
+}
+
+.btn {
+  padding: 5px 11px;
+  font-size: 14px;
+  color: #90caf9;
+  background-color: inherit;
+  border: 1px solid rgba(144, 202, 249, 0.5);
+  outline: inherit;
+  transition: background-color 0.4s, border 0.4s;
+}
+
+.btn:hover {
+  background-color: rgba(144, 202, 249, 0.08);
+  border: 1px solid #90caf9;
+}
+
+.btn-view {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #424242;
+  border: solid 1px #424242;
+}
+
+.btn:hover {
+  background-color: rgba(144, 202, 249, 0.08);
+  border: 1px solid #000;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.amount {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.message {
+  padding: 8px 16px;
+}
+
+.dark {
+  color: #fff;
+}
+
+.light {
+  color: #000;
+}
+
+.username-dark {
+  color: rgba(255,255,255,0.7);
+}
+
+.username-light {
+  color: rgba(0,0,0,0.54);
+}
+
+.header-blue {
+  background-color: rgba(0,184,212,1);
+}
+
+.message-blue {
+  background-color: rgba(0,229,255,1);
+}
+
+.header-cyan {
+  background-color: rgba(0, 191, 165, 1);
+}
+
+.message-cyan {
+  background-color: rgba(29,233,182,1);
+}
+
+.header-yellow {
+  background-color: rgba(255,179,0,1);
+}
+
+.message-yellow {
+  background-color: rgba(255,202,40,1);
+}
+
+.header-orange {
+  background-color: rgba(230,81,0,1);
+}
+
+.message-orange {
+  background-color: rgba(245,124,0,1);
+}
+
+.header-pink {
+  background-color: rgba(194,24,91,1);
+}
+
+.message-pink {
+  background-color: rgba(233,30,99,1);
+}
+
+.header-red {
+  background-color: rgba(208,0,0,1);
+}
+
+.message-red {
+  background-color: rgba(230,33,23,1);
+}
+

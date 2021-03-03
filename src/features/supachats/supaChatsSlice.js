@@ -57,10 +57,20 @@ export const supaChatsSlice = createSlice({
           }
         }
       }
+    },
+    updateSupaChat: {
+      reducer(state, action) {
+        const { id, amount, message } = action.payload;
+        let existingSupaChat = state.find(supaChat => supaChat.id === id);
+        if(existingSupaChat) {
+          existingSupaChat.amount = amount;
+          existingSupaChat.message = message;
+        }
+      }
     }
   }
 })
 
-export const { addSupaChat } = supaChatsSlice.actions;
+export const { addSupaChat, updateSupaChat } = supaChatsSlice.actions;
 
 export default supaChatsSlice.reducer;

@@ -39,7 +39,7 @@ function SupaChatList(props) {
           {supaChat.username}
         </h3>
         <p className={styles.amount}>{`$${supaChat.amount.toFixed(2)}`}</p>
-        <Link to={`/supachats/${supaChat.id}`}>
+        <Link to={`/supaChats/${supaChat.id}`}>
           <button className={`${styles.btn} ${styles['btn-view']}`}>View</button>
         </Link>
       </header>

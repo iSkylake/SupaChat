@@ -5,6 +5,7 @@ import './App.css';
 import Header from './app/Header';
 import SupaChatsList from './features/supachats/SupaChatsList';
 import SingleSupaChatPage from './features/supachats/SingleSupaChatPage';
+import EditSupaChatForm from './features/supachats/EditSupaChatForm';
 
 function App() {
   return (
@@ -16,8 +17,11 @@ function App() {
             <Route path='/' exact>
               <SupaChatsList/>
             </Route>
-            <Route path='/supachats/:supachatId'>
+            <Route path='/supaChats/:supaChatId'>
               <SingleSupaChatPage/>
+            </Route>
+            <Route path='/editsupaChat/:supaChatId'>
+              <EditSupaChatForm/>
             </Route>
           </Switch>
         </main>
