@@ -14,16 +14,16 @@ function EditSupaChatForm() {
   const [amount, setAmount] = useState(supaChat.amount);
   const [message, setMessage] = useState(supaChat.message);
 
+  const canSubmit = Boolean(amount) && Boolean(message);
+
   const handleSubmit = e => {
     e.preventDefault();
-    if(amount && message) {
-      dispatch(updateSupaChat({
-        id: parseInt(supaChatId),
-        amount: parseInt(amount),
-        message
-      }));
-      history.push(`/supaChats/${supaChatId}`);
-    }
+    dispatch(updateSupaChat({
+      id: parseInt(supaChatId),
+      amount: parseInt(amount),
+      message
+    }));
+    history.push(`/supaChats/${supaChatId}`);
   }
 
   return (
@@ -46,7 +46,7 @@ function EditSupaChatForm() {
           value={message}
           onChange={e => setMessage(e.target.value)}
         />
-        <button className={styles.btn}>Edit</button>
+        <button className={styles.btn} disabled={!canSubmit}>Edit</button>
       </form>
     </div>
   )
