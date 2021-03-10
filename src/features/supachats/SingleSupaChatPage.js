@@ -35,7 +35,7 @@ function SingleSupaChat() {
           </h3>
           <p className={styles.amount}>{`$${supaChat.amount.toFixed(2)}`}</p>
           <Link to={`/editSupaChat/${supaChatId}`}>
-            <button className={`${styles.btn} ${styles['btn-view']}`}>Edit</button>
+            <button className={styles['btn-edit']}>Edit</button>
           </Link>
         </header>
         <p
